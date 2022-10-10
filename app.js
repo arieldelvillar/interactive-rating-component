@@ -38,7 +38,7 @@ function formAnimation() {
     if (pos === -100) {
       clearInterval(id);
     } else {
-      pos--
+      pos--;
       rateState.style.transform = "translateX(" + pos + "%)";
       thankState.style.transform = "translateX(" + pos + "%)";
     }
