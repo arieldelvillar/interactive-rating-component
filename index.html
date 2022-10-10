@@ -17,35 +17,54 @@
   <script type="text/javascript" src="app.js"></script>
 </head>
 <body>
+  <main>
 
-  <!-- Rating state start -->
+    <!-- Rating state start -->
+    <article id="rating-state">
+      <section class="rating-form">
+        <div class="star-icon">
+          <img src="https://raw.githubusercontent.com/arieldelvillar/interactive-rating-component/d88aeb8d602b7a183484c9483e7aad22c15a786c/images/icon-star.svg" alt="star">
+        </div>
+      
+        <h1>How did we do?</h1>
 
-  How did we do?
+        <p>Please let us know how we did with your support request. All feedback is                             appreciated to help us improve our offering!</p>
+        <section class="radios">
+          <input type="radio" class="radio-btn" id="radio1" name="rating" value='1'>
+          <input type="radio" class="radio-btn" id="radio2" name="rating" value='2'>
+          <input type="radio" class="radio-btn" id="radio3" name="rating" value='3'>
+          <input type="radio" class="radio-btn" id="radio4" name="rating" value='4'>
+          <input type="radio" class="radio-btn" id="radio5" name="rating" value='5'>
+         </section>
 
-  Please let us know how we did with your support request. All feedback is appreciated 
-  to help us improve our offering!
+         <button onclick="formValidation()">SUBMIT</button>
+      </section>
+    </article>
 
-  1 2 3 4 5
+    <!-- Rating state end -->
 
-  Submit
+    <!-- Thank you state start -->
+    <article id="thank-you-state">
+      <section>
+        <img src="https://raw.githubusercontent.com/arieldelvillar/interactive-rating-component/d88aeb8d602b7a183484c9483e7aad22c15a786c/images/illustration-thank-you.svg" alt="Thank You">
+        <div class="result">
+          <p id="result-text"></p>
+        </div>  
 
-  <!-- Rating state end -->
+        <h1>Thank you!</h1>
 
-  <!-- Thank you state start -->
-
-  You selected <!-- Add rating here --> out of 5
-
-  Thank you!
-
-  We appreciate you taking the time to give a rating. If you ever need more support, 
-  don’t hesitate to get in touch!
-
+      <p class="thank-you-message">We appreciate you taking the time to give a rating. If you ever need more support, 
+       don’t hesitate to get in touch!</p>
+      </section>
+    </article>
+  </main>
   <!-- Thank you state end -->
-
-  
+  <!--
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
+  
   </div>
+  -->
 </body>
 </html>
