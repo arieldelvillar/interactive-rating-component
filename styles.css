@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+/* Variables */
+/* Global Styles */
+html {
+  color: white;
+  font-family: 'Overpass', sans-serif;
+}
+/* Reset Styles */
+*, *::before, *::after {
+  margin: 0;
+}
+body {
+  background: #121417;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main {
+  background: #252d37;
+  border-radius: 30px;
+  width: 425px;
+  height: 425px;
+  position: relative;
+  overflow: hidden;
+}
+article {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+}
+p {
+  font-size: 0.93rem;
+  color: #959eac;
+  line-height: 1.5rem;
+}
+/* Rating State Styles */
+#rating-state {
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+.rating-form, #thank-you-state section {
+  margin: 35px;
+}
+.rating-form > * {
+  margin-bottom: 20px;
+}
+.star-icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: #383D45;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.star-icon img {
+  width: 35%;
+}
+.rating-form h1 {
+  margin-top: 25px;
+  font-size: 1.8rem;
+}
+/* Radio Styles */
+.radios {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.radio-btn {
+  appearance: none;
+  background: #383D45;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  position: relative;
+  color: #959eac;
+  font-weight: 700;
+  cursor: pointer;
+}
+.radio-btn:hover {
+  background: #fb7413;
+  color: white;
+}
+.radio-btn:checked {
+  background: #7c8798;
+  color: white;
+}
+#radio1::before {
+  content: '1';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#radio2::before {
+  content: '2';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#radio3::before {
+  content: '3';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#radio4::before {
+  content: '4';
+  margin: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#radio5::before {
+  content: '5';
+  margin: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+button {
+  width: 100%;
+  height: 50px;
+  margin-top: 15px;
+  border: none;
+  border-radius: 25px;
+  background: #fb7413;
+  color: white;
+  letter-spacing: 0.15rem;
+  font-size: 0.93rem;
+}
+button:hover {
+  color: #fb7413;
+  background: white;
+  cursor: pointer;
+}
+/* Thank you state styles */
+#thank-you-state {
+  left: 100%;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+#thank-you-state section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#thank-you-state section > * {
+  margin-bottom: 15px;
+}
+.result {
+  background: #383D45;
+  width: 55%;
+  height: 30px;
+  margin-top: 20px;
+  padding: 5px 10px 0 10px;
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#result-text {
+  color: #fb7413;
+}
+#thank-you-state h1 {
+  font-size: 1.8rem;
+  margin-top: 20px;
+}
+.thank-you-message {
+  text-align: center;
+  width: 95%;
+}
+@media screen and (max-width: 500px) {
+  main {
+    width: 90%;
+  }
+  .rating-form, #thank-you-state section {
+    margin: 20px;
+  }
+  .star-icon, .radio-btn {
+    width: 40px;
+    height: 40px;
+  }
+  .result {
+    width: 190px;
+  }
+}
